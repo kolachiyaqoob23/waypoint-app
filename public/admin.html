@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Waypoint admin: registered students</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<header class="top"><span class="brand">Waypoint admin</span><span class="spacer"></span><a class="btn ghost small" href="/">Back to app</a></header>
+<main id="app" class="stack">
+  <h1>Registered students</h1>
+  <p class="lede">Everyone who registers is stored in your own database file (data/waypoint.db). Enter the admin key printed when the server started, or saved in data/admin.key.</p>
+  <form id="keyform" class="row" novalidate>
+    <label class="field" style="margin:0;flex:1 1 260px"><span>Admin key</span><input id="key" type="password" autocomplete="off" required></label>
+    <button class="btn primary" type="submit" style="align-self:flex-end">Show students</button>
+  </form>
+  <div id="err" class="err" role="alert" hidden></div>
+  <div id="out"></div>
+</main>
+<script src="/admin.js"></script>
+</body>
+</html>
