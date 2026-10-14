@@ -400,7 +400,7 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, "0.0.0.0", () => {
   console.log(`Waypoint is running at http://localhost:${PORT}`);
   console.log(`Database: ${path.join(DATA_DIR, 'waypoint.db')}`);
   console.log(`Admin page: http://localhost:${PORT}/admin   (admin key: ${ADMIN_KEY})`);
